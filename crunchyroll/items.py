@@ -11,11 +11,11 @@ import scrapy
 class CrunchyrollReviewItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
-    desciption=scrapy.Field()    
+    description=scrapy.Field()
     link=scrapy.Field()
 
     number_of_episodes=scrapy.Field()
-    
+
     average_rating=scrapy.Field()
     total_votes=scrapy.Field()
     one_star=scrapy.Field()
@@ -23,4 +23,3 @@ class CrunchyrollReviewItem(scrapy.Item):
     three_star=scrapy.Field()
     four_star=scrapy.Field()
     five_star=scrapy.Field()
-    
