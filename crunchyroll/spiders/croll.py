@@ -6,6 +6,8 @@ import crunchyroll.items as items
 
 
 class CrollSpider(scrapy.Spider):
+    """Parses the Crunchy roll website for show ratings."""
+
     t_pattern=re.compile('title="(.*?)"')
     name = "Crunchyroll"
     allowed_domains = ["crunchyroll.com"]
