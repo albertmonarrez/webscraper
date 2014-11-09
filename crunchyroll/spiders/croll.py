@@ -41,8 +41,6 @@ class CrollSpider(scrapy.Spider):
             request=scrapy.http.Request(self.main_page+link+'/reviews',callback=self.parse_job)
             request.meta['show']=show#pass in my show item so I can fill it up some more with the callback
 
-            self.list_of_items.append(show)
-
             yield request
 
 

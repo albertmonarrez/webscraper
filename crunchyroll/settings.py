@@ -12,8 +12,12 @@ BOT_NAME = 'crunchyroll'
 
 SPIDER_MODULES = ['crunchyroll.spiders']
 NEWSPIDER_MODULE = 'crunchyroll.spiders'
-ITEM_PIPELINES={'crunchyroll.pipelines.test':300
+ITEM_PIPELINES={'crunchyroll.pipelines.CrunchyrollPipeline':300
 }
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'crunchyroll (+http://www.yourdomain.com)'
+
+POSTGRES_DATABASE_NAME='CrunchyrollReviews'
+POSTGRES_USER='postgres'
+POSTGRES_PASSWORD='radiolab60'
